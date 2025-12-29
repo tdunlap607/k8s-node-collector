@@ -14,5 +14,10 @@ linters-settings:
   gosec:
     excludes:
       - G104
+issues:
+  exclude-rules:
+    - linters:
+        - gosec
+      text: "G104"
 run:
   timeout: 5m
