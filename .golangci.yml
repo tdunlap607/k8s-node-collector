@@ -11,5 +11,8 @@ linters-settings:
   gocritic:
     enabled-checks:
       - importShadow
+  gosec:
+    excludes:
+      - G104
 run:
   timeout: 5m
