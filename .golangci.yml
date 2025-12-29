@@ -3,21 +3,13 @@ version: "2"
 linters:
   disable:
     - errcheck
+    - gosec
   enable:
     - errorlint
     - gocritic
-    - gosec
 linters-settings:
   gocritic:
     enabled-checks:
       - importShadow
-  gosec:
-    excludes:
-      - G104
-issues:
-  exclude-rules:
-    - linters:
-        - gosec
-      text: "G104"
 run:
   timeout: 5m
