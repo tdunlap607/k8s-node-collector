@@ -52,8 +52,6 @@ jobs:
         with:
           args: --verbose
           version: v1.57.2
-          skip-pkg-cache: true
-          skip-build-cache: true
       - name: Verify YAML code
         uses: ibiqlik/action-yamllint@v3
       - name: Vendor Go modules
